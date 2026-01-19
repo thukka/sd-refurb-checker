@@ -39,6 +39,8 @@ const sendEmail = (stock: number) => {
   }
 };
 
+
+// TODO: add stock check & make sure email is only sent once
 try {
   sendEmail(await checkStockStatus());
 } catch (error) {

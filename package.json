@@ -1,5 +1,10 @@
 {
   "type": "module",
+  "scripts": {
+    "dev": "node --loader ts-node/esm app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js"
+  },
   "devDependencies": {
     "@types/node": "^25.0.9",
     "ts-node": "^10.9.2",
